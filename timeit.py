@@ -2,4 +2,4 @@ import time
 
 def calculate_time(func):
    func()
-   return time.time()
+   return int (time.time())
