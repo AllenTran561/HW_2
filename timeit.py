@@ -1,5 +1,7 @@
 import time
 
 def calculate_time(func):
-   func()
-   print(time.time())
+   def wrapper():
+      func()
+      print(time.time())
+   return wrapper
