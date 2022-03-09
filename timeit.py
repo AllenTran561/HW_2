@@ -3,8 +3,7 @@ import time
 def calculate_time(func):
    def wrapper():
       start = time.time()
-      temp = func()
+      func()
       end = time.time()
-      print("Total time " + str (start - end))
-      return temp
+      print("Total time " + str (end - start))
    return wrapper
